@@ -1,0 +1,49 @@
+<!--pages/contact/contact.wxml-->
+<view class="bg">
+<!--轮播-->
+  <swiper autoplay="true" circular="true" interval="3000" class="swiper">
+    <swiper-item>
+      <image src="https://s1.ax1x.com/2020/08/21/dtsQ39.jpg" class="img"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/contectUs_two.jpg" class="img"></image>
+    </swiper-item>
+  </swiper>
+<!--联系我们 -->
+<view class="drink">- 联系我们 -</view>
+  <view class="contect">
+    <view class="contect_list">联系QQ：602943800</view>
+    <view class="contect_list">联系邮箱：839402845@qq.com</view>
+    <view class="contect_list">联系电话：028-641403</view>
+    <view>联系地址：四川省成都市金牛区蜀通路126号</view>
+  </view>
+<!--在线咨询-->
+<view class="drink">- 在线咨询 -</view>
+<view class="ask">
+<form bindsubmit="getValue">
+  <view>
+    <text class="red">*</text>
+    <text>姓名：</text>
+  </view>
+  <view class="inputBox">
+    <input name="name" placeholder="请输入您的姓名" value="{{formInfo}}" class="input"></input>
+  </view>
+   <view>
+    <text class="red">*</text>
+    <text>手机号码</text>
+  </view>
+  <view class="inputBox">
+    <input name="phone" placeholder="请输入您的手机号码" value="{{formInfo}}"  class="input"></input>
+  </view>
+  <view>
+    <text class="red">*</text>
+    <text>留言</text>
+  </view>
+  <view class="textBox">
+    <textarea name="msg" placeholder="请输入您的留言" value="{{formInfo}}"  class="textArea" maxlength="200"></textarea>
+  </view>
+  <button class="confirm" form-type="submit" style="width:100%">马上提交</button>
+   </form>
+</view>
+ <view class="bottom">已经到底啦~~</view>
+</view>

@@ -1,0 +1,52 @@
+<!--pages/peachCake/peachCake.wxml-->
+<view class="bg">
+<!--轮播-->
+  <swiper autoplay="true" circular="true" interval="3000" class="swiper">
+    <swiper-item>
+      <image src="https://s1.ax1x.com/2020/08/21/dtjQoT.jpg" class="img"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://s1.ax1x.com/2020/08/21/dtj3YF.jpg" class="img"></image>
+    </swiper-item>
+  </swiper>
+<!--蛋糕系列-->
+  <view class="cakeList">
+    <view wx:for="{{list}}" wx:key="index" class="cakeBox">
+      <image src="{{item.src}}" class="cake"></image>
+      <view>{{item.text}}</view>
+    </view>
+  </view>
+<!--店面环境 -->
+  <view class="storeW">
+    <view class="store">
+      <text>— 店面环境 —</text>
+    </view>
+    <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+      <view id="" wx:for="{{store}}"  wx:key="*this"  class="scroll-view-item_H demo-text-1">
+        <view class="storeBox">
+          <image src="{{item.src}}" class="storeSize"></image>
+          <view class="myText mgT">{{item.text}}</view>
+          <view class="myText" class="myText">{{item.txt}}</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+<!--推荐甜品-->
+   <view>
+    <view class="sweetFood">
+     <view class="sweetTitle">推荐甜品</view>
+       <view class="sweetTitle">
+         <text class="seeAll">查看全部</text>  
+         <image src="../../images/right.png" class="right"></image>
+       </view>
+     </view>
+   </view>
+  <!--推荐甜品图片-->
+  <view class="sweetContent">
+    <view class="sweetBox">
+      <image src="https://s1.ax1x.com/2020/08/21/dtv91J.jpg"></image>
+      <view>推荐甜品</view>
+    </view>
+  </view>
+<view class="bottom">已经到底啦~~</view>
+</view>

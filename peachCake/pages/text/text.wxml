@@ -1,0 +1,10 @@
+<!--pages/text/text.wxml-->
+<view class="box">
+<view class="title">{{artical.title}}</view>
+<view class="time">
+<text>{{artical.date}}</text>
+<text> {{artical.time}}</text>
+<text class="read">阅读：{{artical.read}}</text>
+</view>
+<view class="artical">{{artical.content}}</view>
+</view>

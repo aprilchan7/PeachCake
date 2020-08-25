@@ -1,0 +1,40 @@
+<!--pages/list/list.wxml-->
+<view class="bg">
+  <!--轮播-->
+  <swiper autoplay="true" circular="true" interval="3000" class="swiper">
+    <swiper-item>
+      <image src="https://s1.ax1x.com/2020/08/21/dtsyHf.jpg" class="img"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://s1.ax1x.com/2020/08/21/dtX1xA.jpg" class="img"></image>
+    </swiper-item>
+  </swiper>
+<!--饮品系列-->
+  <view>
+    <view class="drink fontColor">- 饮品系列 -</view>
+      <view class="drinkBox">
+       <view class="smallBox">
+          <image src="https://s1.ax1x.com/2020/08/21/dtssDP.th.png" class="bigImg"></image>
+       </view>
+       <view class="smallBox">
+          <image src="https://s1.ax1x.com/2020/08/21/dts8nx.png" class="smallImg"></image>
+          <image src="https://s1.ax1x.com/2020/08/21/dtsJHK.png"  class="smallImg"></image>
+       </view>
+      </view>
+  </view>
+<!--蛋糕系列 -->
+  <view>
+    <view class="drink fontColor">- 蛋糕系列 -</view>
+    <view class="cake">
+         <image wx:for="{{cakeUrl}}" key="index" src="{{item}}" class="cakeSize"></image>
+    </view>
+  </view>
+<!--水果沙拉-->
+  <view class="drink fontColor">- 水果沙拉 -</view>
+  <scroll-view class="scroll-view_two" scroll-x="true" bindscroll="scroll" style="width: 100%">
+    <view wx:for="{{saladList}}" id="demo1" class="scroll-view-item demo-text-1">
+      <image src="{{item}}" class="salad"></image>
+    </view>
+  </scroll-view>
+  <view class="bottom">已经到底啦~~</view>
+</view>

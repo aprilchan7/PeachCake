@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/peachCake/peachCake",
+    "pages/list/list",
+    "pages/news/news",
+    "pages/contact/contact",
+    "pages/logs/logs",
+    "pages/text/text"
+  ],
+  "tabBar": {
+    "color": "#7A7A7A",
+    "selectedColor": "#F5B43E",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/peachCake/peachCake",
+        "text": "首页",
+        "iconPath": "images/indexIcon.png",
+        "selectedIconPath": "images/index.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "分类",
+        "iconPath": "images/listIcon.png",
+        "selectedIconPath": "images/list.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "资讯",
+        "iconPath": "images/newsIcon.png",
+        "selectedIconPath": "images/news.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系",
+        "iconPath": "images/contectIcon.png",
+        "selectedIconPath": "images/contect.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "桃本味糕点",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
